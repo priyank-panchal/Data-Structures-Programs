@@ -29,14 +29,14 @@ public:
 		{
 			Node *temp=Que.front();
 			Que.pop();
-			if(root->left==NULL)	
+			if(temp->left==NULL)	
 			{
 				temp->left=newNode(data);
 				break;
 			}
 			else 
 				Que.push(root->left);
-			if(root->right==NULL)
+			if(temp->right==NULL)
 			{
 				temp->right=newNode(data);
 				break;
